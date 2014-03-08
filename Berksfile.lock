@@ -1,0 +1,13 @@
+DEPENDENCIES
+  ohai-example
+    path: .
+    metadata: true
+  ohai-example_test
+    path: ./test/cookbooks/ohai-example_test
+
+GRAPH
+  ohai (2.0.0)
+  ohai-example (1.0.0)
+    ohai (>= 0.0.0)
+  ohai-example_test (0.0.0)
+    ohai-example (>= 0.0.0)
