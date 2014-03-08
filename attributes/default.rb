@@ -16,4 +16,5 @@
 # limitations under the License.
 #
 
+#                           ⬇ This is the name of the cookbook
 default['ohai']['plugins']['ohai-example'] = 'plugins'
