@@ -16,6 +16,13 @@
 # limitations under the License.
 #
 
-provides 'example'
 
-example 'hello world'
+# See https://docs.chef.io/ohai_custom.html for more information
+# on writing Ohai plugins.
+Ohai.plugin(:example) do
+  provides 'example'
+
+  collect_data do
+    example 'hello world'
+  end
+end
