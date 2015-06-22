@@ -19,7 +19,7 @@
 
 # See https://docs.chef.io/ohai_custom.html for more information
 # on writing Ohai plugins.
-Ohai.plugin(:example) do
+Ohai.plugin(:Example) do
   provides 'example'
 
   collect_data do
